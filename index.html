@@ -1,29 +1,142 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Your Name – Engineering Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibek Aryal | Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="resume.html">Resume</a>
-    <a href="mailto:you@email.com">Contact</a>
-  </nav>
 
-  <header>
-    <h1>Hi, I'm [Your Name]</h1>
-    <p>PhD Student | Mechanical Engineering | CFD, Thermo-fluids</p>
-  </header>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Bibek Aryal</h1>
+            <p>Graduate Research Assistant at the University of Missouri-Columbia</p>
+            <div class="contact-info">
+                <a href="mailto:aryal.bibek.biz@gmail.com"><i class="fas fa-envelope"></i> aryal.bibek.biz@gmail.com</a>
+                <a href="https://www.linkedin.com/in/bibekaryalin" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <span><i class="fas fa-phone"></i> 573-529-4084</span>
+                <span><i class="fas fa-map-marker-alt"></i> Columbia, MO, USA</span>
+            </div>
+        </div>
+    </header>
 
-  <section>
-    <h2>Featured Projects</h2>
-    <ul>
-      <li><strong>U-bend Two-Phase Flow Study</strong> – Pressure drop, bubble behavior</li>
-      <li><strong>Thermal Simulation in Electronics</strong> – ANSYS, COMSOL results</li>
-    </ul>
-  </section>
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- About Me Section -->
+        <section id="about">
+            <h2><i class="fas fa-user"></i> About Me</h2>
+            <p>
+                I am a dedicated and skilled Graduate Research Assistant with a strong background in Mechanical and Aerospace Engineering. My expertise lies in Computational Fluid Dynamics (CFD), with hands-on experience using tools like ANSYS Fluent, OpenFOAM, and SolidWorks. I am passionate about solving complex problems in fluid dynamics and heat transfer, and I am always eager to learn and apply new technologies.
+            </p>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
+            <div class="job">
+                <h3>Graduate Research Assistant</h3>
+                <p><strong>University of Missouri-Columbia</strong> | Jan 2025 - Present</p>
+                <ul>
+                    <li>Conducting two-phase flow visualization using ANSYS Fluent.</li>
+                    <li>Analyzing flow visualization of electric motor cooling channels.</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>Graduate Teaching Assistant</h3>
+                <p><strong>University of Missouri-Columbia</strong> | Aug 2025 - Present</p>
+                <ul>
+                    <li>Instructed and evaluated around 120 students in MAE 2300: Thermodynamics.</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>Design Engineer</h3>
+                <p><strong>Precise Hydro Engineering & Construction Pvt. Ltd.</strong> | Nov 2022 - Present</p>
+                <ul>
+                    <li>Performed detailed hydromechanical design, drafting, and analysis of various hydropower components.</li>
+                    <li>Conducted site visits and prepared inspection documentation for multiple hydropower projects in Nepal.</li>
+                </ul>
+            </div>
+             <div class="job">
+                <h3>Mechanical Engineer</h3>
+                <p><strong>Mega Hydro and Engineering Pvt. Ltd.</strong> | Sep 2021 - Oct 2022</p>
+                <ul>
+                    <li>Supervised fabrication of various hydromechanical components.</li>
+                    <li>Prepared, scheduled, coordinated, and monitored hydropower projects.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+            <div class="education-item">
+                <h3>PhD in Mechanical and Aerospace Engineering</h3>
+                <p>University of Missouri-Columbia | 2025 - Present</p>
+            </div>
+            <div class="education-item">
+                <h3>B.E. in Mechanical Engineering</h3>
+                <p>Kathmandu University, Nepal | CGPA: 3.40 | 2017 - 2022</p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2><i class="fas fa-cogs"></i> Technical Skills</h2>
+            <ul>
+                <li><strong>Designing Tools:</strong> AutoCAD, SolidWorks, SpaceClaim</li>
+                <li><strong>CFD Tools:</strong> FLUENT Meshing, ICEM CFD, FLUENT Solver, CFX, CFD-Post, OpenFOAM, ParaView</li>
+                <li><strong>Programming:</strong> MATLAB, Python, C++</li>
+                <li><strong>Other:</strong> Scientific Writing, Literature Review, Microsoft Office</li>
+            </ul>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2><i class="fas fa-flask"></i> Research Projects</h2>
+            <div class="project-category">
+                <h3>External Flow</h3>
+                <ul>
+                    <li>Aerodynamic analysis of Ahmed body using ANSYS Fluent.</li>
+                    <li>Flow over a Circular Cylinder: comparison between steady and unsteady state using ANSYS.</li>
+                </ul>
+            </div>
+            <div class="project-category">
+                <h3>Internal Flow</h3>
+                <ul>
+                    <li>Fluid Flow and Heat Transfer in a Mixing Elbow using ANSYS.</li>
+                    <li>Study of flow performance of a globe valve in ANSYS Fluent.</li>
+                </ul>
+            </div>
+            <div class="project-category">
+                <h3>Multiphase Flow</h3>
+                <ul>
+                    <li>Flow Analysis inside an Orifice: Cavitation Problem.</li>
+                    <li>Analysis of Flush Tank: Volume of Fluid (VOF) Approach.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications">
+            <h2><i class="fas fa-book-open"></i> Publications</h2>
+            <div class="publication-item">
+                <p>Aryal, B., Paudel, S., et al. (2022). <strong>Development of Condition Monitoring of Hydropower System Using Vibration Sensor.</strong> <em>XVII Vibration Engineering & Technology of Machinery, VETOMAC 2022.</em> [Under Review]</p>
+            </div>
+            <div class="publication-item">
+                <p>Aryal, B., Gurung, P., et al. (2019). <strong>Design, Fabrication and Testing of Hydrocyclone Separator as Sediment Separation System.</strong> <em>The Second International Conference on Engineering & Technology, Kantipur Engineering College, Nepal.</em></p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Bibek Aryal. All Rights Reserved.</p>
+    </footer>
+
 </body>
-</html>

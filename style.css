@@ -1,27 +1,166 @@
+/* General Body Styles */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
 }
 
-nav {
-  background-color: #333;
-  padding: 1em;
-  text-align: center;
+/* Container for centered content */
+.container {
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
 }
 
-nav a {
-  color: white;
-  margin: 0 1em;
-  text-decoration: none;
-}
-
+/* Header Styles */
 header {
-  text-align: center;
-  padding: 2em;
-  background-color: #f0f0f0;
+    background: #004080; /* Professional blue */
+    color: #fff;
+    padding: 3rem 0;
+    text-align: center;
+    border-bottom: 4px solid #0059b3;
 }
 
-section {
-  padding: 2em;
+header h1 {
+    margin: 0;
+    font-size: 2.8rem;
+    font-weight: 700;
 }
+
+header p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0 1.5rem;
+    font-weight: 400;
+}
+
+.contact-info a,
+.contact-info span {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #fff;
+}
+
+.contact-info i {
+    margin-right: 8px;
+}
+
+/* Main Content Styles */
+main {
+    padding: 2rem 0;
+}
+
+/* Section Styles */
+section {
+    background: #fff;
+    margin-bottom: 1.5rem;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+section h2 {
+    color: #004080;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+section h2 i {
+    margin-right: 12px;
+}
+
+/* Experience and Education Styles */
+.job, .education-item, .publication-item, .project-category {
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    color: #333;
+    margin-bottom: 0.3rem;
+    font-size: 1.3rem;
+}
+
+.job p, .education-item p {
+    margin: 0;
+    color: #555;
+    font-style: italic;
+}
+
+ul {
+    padding-left: 20px;
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+ul li::before {
+    content: '✓';
+    position: absolute;
+    left: -20px;
+    color: #0059b3;
+    font-weight: bold;
+}
+
+
+#skills ul li::before {
+    content: '▶';
+}
+
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    background: #333;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+    
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info a,
+    .contact-info span {
+        margin: 0.5rem 0;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+}
+
